@@ -1,0 +1,26 @@
+name: Auto Release SUSFS ZIP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: v1.0-susfs
+        name: SUSFS Kernel GT7 v1.0
+        body: Flashowalny kernel z SUSFS, Ramdisk, Magisk tweaks i config.ini
+        files: |
+          susfs.zip
+          magisk-module.zip
+          AnyKernel3/suskernel.prop
+          AnyKernel3/config.ini
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

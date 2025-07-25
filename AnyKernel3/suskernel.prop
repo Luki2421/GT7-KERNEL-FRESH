@@ -1,0 +1,5 @@
+name=SukiSU GT7 Kernel Ultra
+version=v1.0
+features=BBR, SUGOV, SUSFS, KernelSU, Ramdisk
+config=ace5_defconfig
+compiled=2025-07-25
