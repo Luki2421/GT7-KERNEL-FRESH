@@ -1,4 +1,4 @@
-name: Auto Release SUSFS ZIP
+name: Auto Release SUSFS
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
       with:
         tag_name: v1.0-susfs
         name: SUSFS Kernel GT7 v1.0
-        body: Flashowalny kernel z SUSFS, Ramdisk, Magisk tweaks i config.ini
+        body: Kernel z SUSFS, Ramdisk, Magisk Module, config.ini
         files: |
           susfs.zip
           magisk-module.zip

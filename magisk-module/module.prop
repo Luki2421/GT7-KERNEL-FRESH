@@ -2,4 +2,4 @@ id=susfs-config
 name=SUSFS Tweaks GT7
 version=1.0
 author=Luki2421
-description=BBR, Input Boost, Governor, KernelSU tweaks
+description=BBR, Input Boost, KernelSU tweaks
